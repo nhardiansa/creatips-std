@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="py-3 bg-blue-900 sticky justify-center">
+    <nav class="py-3 bg-blue-900 fixed w-full justify-center">
       <div class="container flex justify-between px-4 md:px-0 items-center">
         <h1
           class="
@@ -72,14 +72,80 @@
     </nav>
 
     <!-- Header -->
-    <header class="pt-6">
-      <div class="container px-4 md:px-0">
-        <h1 class="font-montserrat font-bold text-4xl mb-4">Lorem, ipsum.</h1>
-        <p clas="font-poppins text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          earum?
-        </p>
+    <header class="pt-20 pb-14 bg-blue-900">
+      <div class="container px-4 md:px-0 md:flex md:items-center">
+        <div class="text-white">
+          <h1 class="font-montserrat font-bold text-4xl mb-4 md:text-6xl">
+            Lorem, ipsum.
+          </h1>
+          <div class="w-3/4 font-poppins text-lg md:text-2xl">
+            <p clas="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, earum?
+            </p>
+          </div>
+        </div>
+        <img
+          class="mt-20 md:w-4/5"
+          src="src/assets/img/illustration-header.svg"
+          alt="illustration"
+        />
       </div>
     </header>
+
+    <svg
+      class="fill-current text-blue-900 md:hidden"
+      viewBox="0 0 360 51"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 8L8.575 13.325C17.15 18.75 34.25 29.25 51.5 34.675C68.575 40 85.75 40 102.75 40C120 40 137.25 40 154.25 34.675C171.425 29.25 188.5 18.75 205.75 16C222.85 13.25 240 18.75 257.25 28C274.275 37.25 291.5 50.75 308.5 50.675C325.725 50.75 342.75 37.25 351.5 30.675L360 24V0H351.425C342.85 0 325.75 0 308.5 0C291.425 0 274.25 0 257.25 0C240 0 222.75 0 205.75 0C188.575 0 171.5 0 154.25 0C137.15 0 120 0 102.75 0C85.725 0 68.5 0 51.5 0C34.275 0 17.25 0 8.5 0H0V8Z"
+      />
+    </svg>
+    <svg
+      class="hidden md:block fill-current text-blue-900"
+      viewBox="0 0 1440 266"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 95.7865L30 122.427C60 148.669 120 202.549 180 191.573C240 180.597 300 106.762 360 90.4983C420 74.8332 480 116.74 540 133.004C600 148.669 660 138.691 720 117.039C780 95.7865 840 63.8577 900 85.1103C960 106.762 1020 180.597 1080 223.502C1140 266.406 1200 276.384 1260 255.431C1320 234.477 1380 180.597 1410 154.356L1440 127.715V0H1410C1380 0 1320 0 1260 0C1200 0 1140 0 1080 0C1020 0 960 0 900 0C840 0 780 0 720 0C660 0 600 0 540 0C480 0 420 0 360 0C300 0 240 0 180 0C120 0 60 0 30 0H0V95.7865Z"
+      />
+    </svg>
+
+    <!-- About -->
+    <section
+      class="
+        px-4
+        md:px-0
+        container
+        md:grid md:grid-cols-2 md:gap-32 md:items-center
+      "
+    >
+      <img
+        class="hidden md:block"
+        src="src/assets/img/about-illustration.svg"
+        alt="about illustration"
+      />
+      <div class="about mt-6 md:mt-0 flex flex-col items-center md:items-start">
+        <h2
+          class="font-montserrat font-bold text-3xl text-gray-600 md:text-5xl"
+        >
+          About us
+        </h2>
+        <img
+          class="w-11/12 md:hidden mt-8"
+          src="src/assets/img/about-illustration.svg"
+          alt="about illustration"
+        />
+        <p class="font-poppins mt-8 md:mt-7 md:text-xl text-gray-700">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          earum ipsum aliquam dolore voluptas assumenda sapiente, quos nemo ad
+          neque suscipit ducimus corrupti perspiciatis cupiditate mollitia
+          voluptates illum odit provident tenetur?
+        </p>
+      </div>
+    </section>
   </body>
 </html>
