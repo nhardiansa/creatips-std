@@ -16,6 +16,13 @@
     <!-- Compiled CSS -->
     <link rel="stylesheet" href="dist/css/style.css" />
 
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- My CSS -->
     <!-- <link rel="stylesheet" href="src/css/private.css" /> -->
 
@@ -23,7 +30,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="py-3 bg-blue-900 fixed w-full justify-center">
+    <nav class="py-3 bg-blue-900 fixed w-full justify-center z-10">
       <div class="container flex justify-between px-4 md:px-0 items-center">
         <h1
           class="
@@ -303,6 +310,124 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects"></section>
+    <section id="projects" class="projects pt-16 md:pt-20">
+      <div class="container px-4">
+        <h2
+          class="font-montserrat text-3xl text-gray-600 text-center md:text-4xl"
+        >
+          Our Projects
+        </h2>
+        <div class="md:grid md:grid-cols-3 gap-4">
+          <div class="photography mt-8">
+            <h3 class="font-poppins text-xl text-gray-500 mb-4 md:mb-2">
+              Photography
+            </h3>
+            <div class="swiper-container">
+              <div class="images swiper-wrapper">
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/0A1931"
+                  alt="example"
+                />
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/185ADB"
+                  alt="example"
+                />
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/FFC947"
+                  alt="example"
+                />
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="smm mt-8">
+            <h3 class="font-poppins text-xl text-gray-500 mb-4 md:mb-2">
+              Social Media Management
+            </h3>
+            <div class="swiper-container">
+              <div class="images swiper-wrapper">
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/0A1931"
+                  alt="example"
+                />
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/185ADB"
+                  alt="example"
+                />
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/FFC947"
+                  alt="example"
+                />
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="logo-design mt-8">
+            <h3 class="font-poppins text-xl text-gray-500 mb-4 md:mb-2">
+              Desain Logo
+            </h3>
+            <div class="swiper-container">
+              <div class="images swiper-wrapper">
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/0A1931"
+                  alt="example"
+                />
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/185ADB"
+                  alt="example"
+                />
+                <img
+                  class="swiper-slide rounded-2xl"
+                  src="https://via.placeholder.com/310x277/FFC947"
+                  alt="example"
+                />
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SwiperJS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        // direction: "vertical",
+        // loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
