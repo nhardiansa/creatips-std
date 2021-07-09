@@ -44,21 +44,23 @@
         >
           Creatips.std
         </h1>
-        <svg
-          id="hamburger"
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-white w-6 md:hidden"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+        <span>
+          <svg
+            id="hamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white w-6 md:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </span>
         <ul
           class="hidden md:flex text-white w-2/5 justify-between font-poppins"
         >
@@ -318,7 +320,7 @@
           Our Projects
         </h2>
         <div class="md:grid md:grid-cols-3 gap-4">
-          <div class="photography mt-8">
+          <div class="photography lg:mt-8 p-12 pb-0 lg:p-0">
             <h3 class="font-poppins text-xl text-gray-500 mb-4 md:mb-2">
               Photography
             </h3>
@@ -326,7 +328,7 @@
               <div class="images swiper-wrapper">
                 <img
                   class="swiper-slide rounded-2xl"
-                  src="https://via.placeholder.com/310x277/0A1931"
+                  src="https://via.placeholder.com/310x277/1e3a8a"
                   alt="example"
                 />
                 <img
@@ -345,7 +347,7 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="smm mt-8">
+          <div class="smm lg:mt-8 p-12 pb-0 lg:p-0">
             <h3 class="font-poppins text-xl text-gray-500 mb-4 md:mb-2">
               Social Media Management
             </h3>
@@ -353,7 +355,7 @@
               <div class="images swiper-wrapper">
                 <img
                   class="swiper-slide rounded-2xl"
-                  src="https://via.placeholder.com/310x277/0A1931"
+                  src="https://via.placeholder.com/310x277/1e3a8a"
                   alt="example"
                 />
                 <img
@@ -372,7 +374,7 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="logo-design mt-8">
+          <div class="logo-design lg:mt-8 p-12 pb-0 lg:p-0">
             <h3 class="font-poppins text-xl text-gray-500 mb-4 md:mb-2">
               Desain Logo
             </h3>
@@ -380,7 +382,7 @@
               <div class="images swiper-wrapper">
                 <img
                   class="swiper-slide rounded-2xl"
-                  src="https://via.placeholder.com/310x277/0A1931"
+                  src="https://via.placeholder.com/310x277/1e3a8a"
                   alt="example"
                 />
                 <img
@@ -403,9 +405,514 @@
       </div>
     </section>
 
+    <!-- Pricing -->
+    <section class="pricing pt-16 lg:pt-20">
+      <!-- component -->
+      <div class="bg-white dark:bg-gray-800">
+        <div class="container px-6 py-8 mx-auto">
+          <h2
+            class="
+              font-montserrat
+              text-3xl text-gray-600 text-center
+              md:text-4xl
+              mb-5
+              lg:mb-7
+            "
+          >
+            Pricing
+          </h2>
+          <div
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              space-y-8
+              lg:-mx-4 lg:flex-row lg:items-stretch lg:space-y-0
+            "
+          >
+            <div
+              class="
+                flex flex-col
+                w-full
+                max-w-sm
+                p-8
+                space-y-8
+                text-center
+                bg-white
+                border-2 border-gray-200
+                rounded-lg
+                lg:mx-4
+                dark:bg-gray-800 dark:border-gray-700
+              "
+            >
+              <div class="flex-shrink-0">
+                <h2
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    px-2
+                    font-semibold
+                    tracking-tight
+                    text-blue-400
+                    uppercase
+                    rounded-lg
+                    bg-gray-50
+                    dark:bg-gray-700
+                    font-montserrat
+                  "
+                >
+                  Casual
+                </h2>
+              </div>
+              <div class="flex-shrink-0">
+                <span
+                  class="
+                    pt-2
+                    text-4xl
+                    font-bold
+                    text-gray-800
+                    uppercase
+                    dark:text-gray-100
+                    font-montserrat
+                  "
+                >
+                  Free
+                </span>
+              </div>
+              <ul class="flex-1 space-y-4 font-poppins">
+                <li class="text-gray-500 dark:text-gray-400">
+                  Up to 5 projects
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  Up to 10 collaborators
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">2Gb of storage</li>
+              </ul>
+
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  px-4
+                  py-2
+                  font-semibold
+                  text-white
+                  uppercase
+                  transition-colors
+                  bg-blue-500
+                  rounded-lg
+                  hover:bg-blue-700
+                  focus:outline-none
+                  duration-300
+                  font-montserrat
+                "
+              >
+                Start free
+              </button>
+            </div>
+
+            <div
+              class="
+                flex flex-col
+                w-full
+                max-w-sm
+                p-8
+                space-y-8
+                text-center
+                bg-white
+                border-2 border-gray-200
+                rounded-lg
+                lg:mx-4
+                dark:bg-gray-800 dark:border-gray-700
+              "
+            >
+              <div class="flex-shrink-0">
+                <h2
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    px-2
+                    font-semibold
+                    tracking-tight
+                    text-blue-400
+                    uppercase
+                    rounded-lg
+                    bg-gray-50
+                    dark:bg-gray-700
+                    font-montserrat
+                  "
+                >
+                  Profesional
+                </h2>
+              </div>
+              <div class="flex-shrink-0">
+                <span
+                  class="
+                    pt-2
+                    text-4xl
+                    font-bold
+                    text-gray-800
+                    uppercase
+                    dark:text-gray-100
+                    font-montserrat
+                  "
+                >
+                  $24.90
+                </span>
+                <span class="text-gray-500 dark:text-gray-400"> /month </span>
+              </div>
+              <ul class="flex-1 space-y-4 font-poppins">
+                <li class="text-gray-500 dark:text-gray-400">
+                  Up to 10 projects
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  Up to 20 collaborators
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  10Gb of storage
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  Real-time collaborations
+                </li>
+              </ul>
+
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  px-4
+                  py-2
+                  font-semibold
+                  text-white
+                  uppercase
+                  transition-colors
+                  bg-blue-500
+                  rounded-lg
+                  hover:bg-blue-700
+                  focus:outline-none
+                  duration-300
+                  font-montserrat
+                "
+              >
+                Start free trial
+              </button>
+            </div>
+
+            <div
+              class="
+                flex flex-col
+                w-full
+                max-w-sm
+                p-8
+                space-y-8
+                text-center
+                bg-white
+                border-2 border-gray-200
+                rounded-lg
+                lg:mx-4
+                dark:bg-gray-800 dark:border-gray-700
+              "
+            >
+              <div class="flex-shrink-0">
+                <h2
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    px-2
+                    font-semibold
+                    tracking-tight
+                    text-blue-400
+                    uppercase
+                    rounded-lg
+                    bg-gray-50
+                    dark:bg-gray-700
+                    font-montserrat
+                  "
+                >
+                  Expert
+                </h2>
+              </div>
+              <div class="flex-shrink-0">
+                <span
+                  class="
+                    pt-2
+                    text-4xl
+                    font-bold
+                    text-gray-800
+                    uppercase
+                    dark:text-gray-100
+                    font-montserrat
+                  "
+                >
+                  $49.90
+                </span>
+                <span class="text-gray-500 dark:text-gray-400"> /month </span>
+              </div>
+              <ul class="flex-1 space-y-4 font-poppins">
+                <li class="text-gray-500 dark:text-gray-400">
+                  Unlimited projects
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  Unlimited collaborators
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  Unlimited storage
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">
+                  Real-time collaborations
+                </li>
+                <li class="text-gray-500 dark:text-gray-400">24x7 Support</li>
+              </ul>
+
+              <button
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  px-4
+                  py-2
+                  font-semibold
+                  text-white
+                  uppercase
+                  transition-colors
+                  bg-blue-500
+                  rounded-lg
+                  hover:bg-blue-700
+                  duration-300
+                  focus:outline-none
+                  font-montserrat
+                "
+              >
+                Start free trial
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faqs pt-6 lg:pt-20">
+      <!-- component -->
+      <h2
+        class="
+          font-montserrat
+          text-3xl text-gray-600 text-center
+          md:text-4xl
+          mb-3
+          lg:mb-5
+        "
+      >
+        FAQs
+      </h2>
+      <div class="bg-white mx-auto p-6 lg:grid lg:grid-cols-2 gap-4">
+        <div class="mb-4 lg:mb-0">
+          <div
+            class="
+              flex
+              items-center
+              justify-between
+              bg-gray-200
+              pl-3
+              pr-2
+              py-3
+              w-full
+              rounded
+              text-gray-600
+              font-bold
+              cursor-pointer
+              hover:bg-gray-300
+              question
+            "
+          >
+            Lorem ipsum dolor sit amet?
+            <span
+              class="
+                h-6
+                w-6
+                flex
+                items-center
+                justify-center
+                text-teal-500
+                arrow
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="p-3 answer hidden">
+            <p class="text-gray-600 mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque sed nulla porttitor, porttitor arcu ut, dictum augue.
+              Vestibulum consequat in urna in bibendum. Praesent sed magna
+              risus. Nunc elementum in mauris ac pharetra. Ut blandit ut lorem
+              sit amet rutrum. Vivamus ut purus fringilla, euismod nibh ut,
+              blandit.
+            </p>
+            <p class="text-gray-600">
+              Nunc ac efficitur sapien. Mauris eu lectus odio. Mauris ac erat
+              tortor. Nulla consectetur commodo justo. Pellentesque eget ornare
+              quam. Pellentesque sodales metus non semper luctus. Praesent non
+              ornare tellus, eget vulputate tellus. Donec luctus non sapien sed
+              semper.
+            </p>
+          </div>
+        </div>
+        <div class="mb-4 lg:mb-0">
+          <div
+            class="
+              flex
+              items-center
+              justify-between
+              bg-gray-200
+              pl-3
+              pr-2
+              py-3
+              w-full
+              rounded
+              text-gray-600
+              font-bold
+              cursor-pointer
+              hover:bg-gray-300
+              question
+            "
+          >
+            Lorem ipsum dolor sit amet?
+            <span
+              class="
+                h-6
+                w-6
+                flex
+                items-center
+                justify-center
+                text-teal-500
+                arrow
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="p-3 answer hidden">
+            <p class="text-gray-600 mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque sed nulla porttitor, porttitor arcu ut, dictum augue.
+              Vestibulum consequat in urna in bibendum. Praesent sed magna
+              risus. Nunc elementum in mauris ac pharetra. Ut blandit ut lorem
+              sit amet rutrum. Vivamus ut purus fringilla, euismod nibh ut,
+              blandit.
+            </p>
+            <p class="text-gray-600">
+              Nunc ac efficitur sapien. Mauris eu lectus odio. Mauris ac erat
+              tortor. Nulla consectetur commodo justo. Pellentesque eget ornare
+              quam. Pellentesque sodales metus non semper luctus. Praesent non
+              ornare tellus, eget vulputate tellus. Donec luctus non sapien sed
+              semper.
+            </p>
+          </div>
+        </div>
+        <div class="mb-4 lg:mb-0">
+          <div
+            class="
+              flex
+              items-center
+              justify-between
+              bg-gray-200
+              pl-3
+              pr-2
+              py-3
+              w-full
+              rounded
+              text-gray-600
+              font-bold
+              cursor-pointer
+              hover:bg-gray-300
+              question
+            "
+          >
+            Lorem ipsum dolor sit amet?
+            <span
+              class="
+                h-6
+                w-6
+                flex
+                items-center
+                justify-center
+                text-teal-500
+                arrow
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="p-3 answer hidden">
+            <p class="text-gray-600 mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque sed nulla porttitor, porttitor arcu ut, dictum augue.
+              Vestibulum consequat in urna in bibendum. Praesent sed magna
+              risus. Nunc elementum in mauris ac pharetra. Ut blandit ut lorem
+              sit amet rutrum. Vivamus ut purus fringilla, euismod nibh ut,
+              blandit.
+            </p>
+            <p class="text-gray-600">
+              Nunc ac efficitur sapien. Mauris eu lectus odio. Mauris ac erat
+              tortor. Nulla consectetur commodo justo. Pellentesque eget ornare
+              quam. Pellentesque sodales metus non semper luctus. Praesent non
+              ornare tellus, eget vulputate tellus. Donec luctus non sapien sed
+              semper.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SwiperJS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/js/script.js"></script>
     <script>
       const swiper = new Swiper(".swiper-container", {
         // Optional parameters
